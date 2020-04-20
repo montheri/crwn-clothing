@@ -9,6 +9,10 @@
     margin: 0 7px 15px;
     background-position: center;
     background-size: cover;
+
+    &.size{
+      height: 380px;
+    }
   
     &:first-child {
       margin-right: 7.5px;
