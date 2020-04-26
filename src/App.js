@@ -29,7 +29,7 @@ class App extends React.Component {
               id: userRef.id,
               ...snapShot.data()
             }
-          }, () => {console.log(this.state)});
+          });
         });
       }
       else {

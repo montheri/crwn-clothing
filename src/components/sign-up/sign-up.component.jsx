@@ -28,7 +28,6 @@ class SignUp extends React.Component {
         } else {
             try {
                 const { user } = await auth.createUserWithEmailAndPassword(email, password);
-                console.log('user in sign-up com : ', user)
                 await createUserProfileDocument(user, {displayName});
                 this.setState({
                     displayName: '',
@@ -37,7 +36,7 @@ class SignUp extends React.Component {
                     confirmPassword: ''
                 })
             } catch (e) {
-                console.log('error creating user : ', e)
+                alert("error in careating an account!!")
             }
         }
     }
