@@ -14,7 +14,12 @@
     "react-route": "^1.0.3",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
+<<<<<<< HEAD
     "redux": "^4.0.5"
+=======
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6"
+>>>>>>> 125017d06aa19756aa5a8945812329bab6633eca
   },
   "scripts": {
     "start": "react-scripts start",
