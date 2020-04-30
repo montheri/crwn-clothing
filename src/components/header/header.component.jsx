@@ -4,8 +4,8 @@ import { ReactComponent as Logo } from '../../assets/crown.svg'
 import './header.styles.scss'
 import {auth} from '../../firebase/firebase.utils'
 
-import CardIcon from '../card-icon/card-icon.component'
-import CardDropdown from '../card-dropdown/card-dropdown.component'
+import CartIcon from '../cart-icon/cart-icon.component'
+import CartDropdown from '../cart-dropdown/cart-dropdown.component'
 
 import { connect } from 'react-redux'
 
@@ -23,15 +23,15 @@ const Header = ({currentUser, hidden}) => (
             :
             <Link className='option' to="/SingIn">Sing In</Link>
             }
-            <CardIcon />
+            <CartIcon />
         </div>
-        {hidden ? null : <CardDropdown />
+        {hidden ? null : <CartDropdown />
         } 
         
     </div>
 )
 
-const mapStateToProps = ({user: {currentUser}, card: {hidden}}) => ({
+const mapStateToProps = ({user: {currentUser}, cart: {hidden}}) => ({
     currentUser,
     hidden
 
@@ -39,7 +39,7 @@ const mapStateToProps = ({user: {currentUser}, card: {hidden}}) => ({
 /*
 const mapStateToProps = (state) => ({
     currentUser: state.user.currentUser,
-    hidden: state.card.hidden
+    hidden: state.cart.hidden
 
 });
 */
