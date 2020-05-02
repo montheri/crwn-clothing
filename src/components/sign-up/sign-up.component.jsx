@@ -22,7 +22,7 @@ class SignUp extends React.Component {
         event.preventDefault();
         const { displayName, email, password, confimePassword } = this.state;
 
-        if (password == confimePassword){
+        if (password === confimePassword){
             alert("paswords don't match")
             return
         } else {
