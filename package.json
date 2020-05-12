@@ -20,7 +20,8 @@
     "redux-persist": "^6.0.0",
     "reselect": "^4.0.0",
     "route": "^0.2.5",
-    "stripe": "^8.50.0"
+    "stripe": "^8.50.0",
+    "styled-components": "^5.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
