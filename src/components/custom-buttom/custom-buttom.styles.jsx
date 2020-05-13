@@ -44,6 +44,8 @@ const getButtonStyles = props => {
 };
 
 export const CustomButtonContainer = styled.button`
+
+  margin: auto;
   min-width: 165px;
   width: auto;
   height: 50px;
